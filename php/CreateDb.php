@@ -30,7 +30,6 @@ class CreateDb{
     // $this->servername= "us-cdbr-east-05.cleardb.net";
     // $this->username="b327308a5d4641";
     // $this->password="9765d567";
-  
 
   //create connection
       $this->con = mysqli_connect($servername, $username, $password);
@@ -72,4 +71,7 @@ class CreateDb{
       return $result;
     }
   }
+
 }
+// $database = new CreateDb("Productdb", "Producttb");
+// $database = new mysqli($server, $username, $password, $db);
