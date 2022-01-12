@@ -23,8 +23,16 @@ class CreateDb{
     $this->password=$password;
   
 
-  //create connection
-      $this->con = mysqli_connect($servername, $username, $password);
+      //create connection
+
+      //~try Heroku用リンク
+      try{
+        $this->con=new PDO('mysql://b327308a5d4641:9765d567@us-cdbr-east-05.cleardb.net/heroku_bdb71811169d696?reconnect=true');
+      }catch(PDOException $e){
+        print('DB接続エラー:'.$e->getMessage());
+      }
+      // ローカル用リンク
+      // $this->con = mysqli_connect($servername, $username, $password);
 
   //Check connection
     if(!$this->con){

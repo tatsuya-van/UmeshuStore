@@ -7,13 +7,9 @@ require_once ('./php/component.php');
 
 
 // create instance of Createdb class
-// $database = new CreateDb("Productdb", "Producttb");
+$database = new CreateDb("Productdb", "Producttb");
 //例外処理
-try{
-  $db=new PDO('mysql://b327308a5d4641:9765d567@us-cdbr-east-05.cleardb.net/heroku_bdb71811169d696?reconnect=true');
-}catch(PDOException $e){
-  print('DB接続エラー:'.$e->getMessage());
-}
+
 
 if (isset($_POST['add'])){
     /// print_r($_POST['product_id']);
