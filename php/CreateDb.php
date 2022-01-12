@@ -9,22 +9,24 @@ class CreateDb{
 
   //class constructor
   public function __construct(
-    $dbname="Newdb",
-    $tablename="Productdb",
-    $servername="localhost",
-    $username="root",
-    $password=""
-    // $dbname="productdb",
-    // $tablename="Producttb",
-    // $servername="us-cdbr-east-05.cleardb.net",
-    // $username="b327308a5d4641",
-    // $password="9765d567"
+    $dbname="",
+    $tablename="",
+    $servername="us-cdbr-east-05.cleardb.net",
+    $username="b327308a5d4641",
+    $password="9765d567"
+
   )
   {
 
 
-    $this -> dbname="productdb";
-    $this-> tablename="Producttb";
+    // $this -> dbname=$dbname;
+    // $this-> tablename=$tablename;
+    // $this->servername= $servername;
+    // $this->username=$username;
+    // $this->password=$password;
+
+    $this -> dbname=$dbname;
+    $this-> tablename=$tablename;
     $this->servername= "us-cdbr-east-05.cleardb.net";
     $this->username="b327308a5d4641";
     $this->password="9765d567";
