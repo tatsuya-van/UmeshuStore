@@ -14,8 +14,8 @@ class CreateDb{
     // $servername="localhost",
     // $username="root",
     // $password=""
-    $dbname="Newdb",
-    $tablename="Productdb",
+    $dbname="productdb",
+    $tablename="Producttb",
     $servername="us-cdbr-east-05.cleardb.net",
     $username="b327308a5d4641",
     $password="9765d567"
