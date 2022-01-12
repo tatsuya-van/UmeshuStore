@@ -9,11 +9,16 @@ class CreateDb{
 
   //class constructor
   public function __construct(
+    // $dbname="Newdb",
+    // $tablename="Productdb",
+    // $servername="localhost",
+    // $username="root",
+    // $password=""
     $dbname="Newdb",
     $tablename="Productdb",
-    $servername="localhost",
-    $username="root",
-    $password=""
+    $servername="us-cdbr-east-05.cleardb.net",
+    $username="b327308a5d4641",
+    $password="9765d567"
   )
   {
     $this -> dbname=$dbname;
