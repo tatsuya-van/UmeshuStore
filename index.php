@@ -7,7 +7,6 @@ require_once ('./php/component.php');
 
 
 // create instance of Createdb class
-// $database = new mysqli($server, $username, $password, $db);
 $database = new CreateDb("Productdb", "Producttb");
 
 // 例外処理
