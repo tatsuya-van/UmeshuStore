@@ -69,7 +69,11 @@ if (isset($_POST['add'])){
 
 
   <?php require_once ("php/header.php"); ?>
-  <div class="container">
+  <div class="ad" style="height: 300px;background-color:whitesmoke; display:flex; align-items:center;">
+    <h3 style="margin:0 auto;">DRINKWARE
+    </h3>
+  </div>
+  <div class=" container" style="padding:0 80px 0 80px">
     <div class="row text-center py-5">
       <?php
                 $result = $database->getData();
